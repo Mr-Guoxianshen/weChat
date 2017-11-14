@@ -8,7 +8,7 @@
     </block>
   </view>
   <view class='imgView'>
-    <button class="camera" bindtap="chooseImage" style="margin-right: 20px;">照妖镜</button>
+    <button class="camera" bindtap="chooseImage" style="margin-right: 20px;">camera</button>
     <button class="camera" bindtap="startRecord">Sing</button> 
     <block wx:if="{{showText === 'camera'}}">
       <image src="{{camareImg}}" wx:if="{{camareImg}}" class='img'></image>
