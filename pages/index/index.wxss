@@ -17,11 +17,11 @@
 }
 
 .usermotto {
-  margin-top: 100px;
+  margin-top: 30px;
 }
 
 .imgView {
-  width: 200px;
+  width: 220px;
 }
 
 .imgView .img {
@@ -33,4 +33,12 @@
   margin-top: 30px;
   margin-bottom: 10px;
   width: 100px;
+  display: inline-block;
+}
+
+.imgText {
+  text-align: center;
+  width:100%;
+  display:inline-block;
+  line-height:30px;
 }

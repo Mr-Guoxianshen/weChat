@@ -8,9 +8,16 @@
     </block>
   </view>
   <view class='imgView'>
-    <button class="camera" bindtap="chooseImage">照妖镜</button>
-    <image src="{{camareImg}}" wx:if="{{camareImg}}" class='img'></image>
-    <text class="user-motto">{{imgText}}</text>
+    <button class="camera" bindtap="chooseImage" style="margin-right: 20px;">照妖镜</button>
+    <button class="camera" bindtap="startRecord">Sing</button> 
+    <block wx:if="{{showText === 'camera'}}">
+      <image src="{{camareImg}}" wx:if="{{camareImg}}" class='img'></image>
+      <text class="imgText">{{imgText}}</text>
+    </block>
+    <block wx:if="{{showText === 'sing'}}">
+      <text class="imgText">{{_time}}</text>
+      <button class="imgText" bindtap="opera" data-singstatus="{{singStatus}}" wx:if="{{singStatus !== 3}}">{{singStatus === 1?'播放':(singStatus === 2?'停止':'播放中..')}}</button>
+    </block>
   </view>
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
